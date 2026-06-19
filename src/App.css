@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  font-family: Arial, sans-serif;
+}
+
+.light {
+  background: #f5f7fa;
+  color: #222;
+}
+
+.dark {
+  background: #121212;
+  color: #fff;
+}
+
+.toggle-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.light .toggle-btn {
+  background: #222;
+  color: white;
+}
+
+.dark .toggle-btn {
+  background: white;
+  color: black;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.05);
+}
